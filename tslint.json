@@ -1,0 +1,6 @@
+{
+  "extends": ["tslint-react", "tslint-react-hooks", "tslint-config-prettier"],
+  "rules": {
+    "react-hooks-nesting": "warning"
+  }
+}
