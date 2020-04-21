@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./components/Home";
-import Doctors from "./components/DoctorsList";
-import DoctorSheet from "./components/DoctorSheet";
+import HomeContainer from "./components/HomeContainer";
+import DoctorsListContainer from "./components/DoctorsListContainer";
+import DoctorSheetContainer from "./components/DoctorSheetContainer";
 import "./App.css";
 
 const App: React.SFC = () => {
@@ -12,13 +12,13 @@ const App: React.SFC = () => {
       <Layout>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <HomeContainer />
           </Route>
           <Route exact path="/doctors">
-            <Doctors />
+            <DoctorsListContainer />
           </Route>
           <Route exact path="/doctors/:doctorid">
-            <DoctorSheet />
+            <DoctorSheetContainer />
           </Route>
           <Route>
             <h2>404 - Page not found !</h2>

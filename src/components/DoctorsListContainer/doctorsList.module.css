@@ -22,6 +22,11 @@
   max-width: 100%;
 }
 
+.doctorLink {
+  text-decoration: none;
+  color: black;
+}
+
 .doctorInfos {
   margin-top: auto;
   text-align: center;
