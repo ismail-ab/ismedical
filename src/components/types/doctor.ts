@@ -18,11 +18,11 @@ interface Link {
 
 export interface IDoctor {
   fullUrl: string;
-  resource: Resource;
+  resource: IResource;
   search: Search;
 }
 
-interface Resource {
+export interface IResource {
   resourceType: string;
   id: string;
   meta: Meta2;
@@ -53,7 +53,7 @@ interface Name {
   text?: string;
   family?: string;
   given?: string;
-  prefix?: string[];
+  prefix?: string;
   _family?: Family;
 }
 

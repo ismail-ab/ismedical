@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Doctors from "./components/Doctors";
+import DoctorSheet from "./components/DoctorSheet";
 import "./App.css";
 
 const App: React.SFC = () => {
@@ -15,6 +16,9 @@ const App: React.SFC = () => {
           </Route>
           <Route exact path="/doctors">
             <Doctors />
+          </Route>
+          <Route exact path="/doctors/:doctorid">
+            <DoctorSheet />
           </Route>
           <Route>
             <h2>404 - Page not found !</h2>
