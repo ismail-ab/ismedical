@@ -1,0 +1,28 @@
+.doctors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doctorCard {
+  cursor: pointer;
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.doctorImage {
+  height: 200px;
+  overflow: hidden;
+}
+
+.doctorImage img {
+  max-width: 100%;
+}
+
+.doctorInfos {
+  margin-top: auto;
+  text-align: center;
+}
