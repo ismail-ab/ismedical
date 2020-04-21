@@ -24,5 +24,6 @@ package.lock.json
 .env
 /public
 /build
+**/*.png
 # editor
 .vscode
