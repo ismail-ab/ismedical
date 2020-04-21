@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
-import Doctors from "./components/Doctors";
+import Doctors from "./components/DoctorsList";
 import DoctorSheet from "./components/DoctorSheet";
 import "./App.css";
 

@@ -21,7 +21,8 @@ const DoctorSheet: React.FC = () => {
       setResourceId(resource.id);
       setIsloading(false);
     } catch (err) {
-      alert("An error occured"); // do a smart toast :)
+      alert("An error occured while getting users. Refresh page."); // do a smart toast :)
+      setIsloading(false);
     }
   };
 
@@ -34,7 +35,7 @@ const DoctorSheet: React.FC = () => {
   }
 
   if (!resource) {
-    return <p>No doctors</p>;
+    return <p>No doctor</p>;
   }
 
   if (resource.resourceType !== "Practitioner") {

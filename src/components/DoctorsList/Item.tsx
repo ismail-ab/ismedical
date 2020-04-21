@@ -4,11 +4,11 @@ import { IDoctor } from "../types/doctor";
 import styles from "./doctorsList.module.css";
 import avatar from "../../resources/avatar.png";
 
-interface IDoctorItemProps {
+interface IItemProps {
   doctor: IDoctor;
 }
 
-const DoctorItem: React.SFC<IDoctorItemProps> = ({ doctor }) => {
+const Item: React.SFC<IItemProps> = ({ doctor }) => {
   const {
     prefix = "Mr.",
     family = "~No family name",
@@ -32,4 +32,4 @@ const DoctorItem: React.SFC<IDoctorItemProps> = ({ doctor }) => {
   );
 };
 
-export default DoctorItem;
+export default Item;
