@@ -18,7 +18,7 @@ const Pagination: React.SFC<IPaginationProps> = ({ urlResource }) => {
   const nextStyle =
     currentPageNumber === numberTotalOfPages ? styles.active : "";
 
-  if (totalElements === 0) {
+  if (totalElements === 0 || !maxElementDisplayed) {
     return null;
   }
 
