@@ -18,6 +18,10 @@ const Pagination: React.SFC<IPaginationProps> = ({ urlResource }) => {
   const nextStyle =
     currentPageNumber === numberTotalOfPages ? styles.active : "";
 
+  if (totalElements === 0) {
+    return null;
+  }
+
   return (
     <div className={styles.pagination}>
       <PageLink

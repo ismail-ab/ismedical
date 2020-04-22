@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { paginationContext } from "../../Pagination";
 import DoctorItem from "./DoctorItem";
 import { IDoctor } from "../types/doctor";
-import styles from "./doctorsList.module.css";
+import styles from "../doctors.module.css";
 
 const DoctorsList: React.FC = () => {
   const { page, limit, setTotalElements } = useContext(paginationContext);

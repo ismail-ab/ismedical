@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { IDoctor } from "../types/doctor";
-import styles from "./doctorsheet.module.css";
+import styles from "../doctors.module.css";
 
 const DoctorSheet: React.FC = () => {
   const { doctorid: doctorId } = useParams();
@@ -35,22 +35,22 @@ const DoctorSheet: React.FC = () => {
     return <p>No doctor</p>;
   }
 
-  const { name, picture, qualification, address, email, phone } = doctor;
+  const { id, name, picture, qualification, address, email, phone } = doctor;
 
   return (
-    <section className={styles.doctorCard}>
+    <section className={styles.doctorSheet}>
       <img src={picture} alt={name} />
       <div className={styles.doctorDetails}>
         <div className={styles.doctorInfos}>
-          <h3>{name}</h3>
-          <h2>{qualification}</h2>
+          <h2>{name}</h2>
+          <h3>{qualification}</h3>
           <p>{address}</p>
           <p>{email}</p>
           <p>{phone}</p>
         </div>
-        <button disabled={true} className={styles.bookButton}>
-          Book an appointment
-        </button>
+        <Link className={styles.doctorLink} to={`/doctors/${id}/edit`}>
+          <button className={styles.editDoctorButton}>Edit this doctor</button>
+        </Link>
       </div>
     </section>
   );

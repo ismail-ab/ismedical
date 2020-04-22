@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IDoctor } from "../types/doctor";
-import styles from "./doctorsList.module.css";
+import styles from "../doctors.module.css";
 
 interface IDoctorItemProps {
   doctor: IDoctor;
@@ -11,9 +11,9 @@ const DoctorItem: React.SFC<IDoctorItemProps> = ({ doctor }) => {
   const { id, name, picture, qualification } = doctor;
 
   return (
-    <div className={styles.doctorCard}>
+    <div className={styles.doctorsCard}>
       <Link className={styles.doctorLink} to={"/doctors/" + id}>
-        <div className={styles.doctorImage}>
+        <div className={styles.doctorsImage}>
           <img src={picture} alt={name} />
         </div>
         <div className={styles.doctorInfos}>

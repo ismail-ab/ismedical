@@ -1,0 +1,77 @@
+.doctors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doctorsCard {
+  cursor: pointer;
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.doctorsCard img {
+  object-fit: contain;
+}
+
+.doctors .doctorsImage {
+  height: 200px;
+  overflow: hidden;
+}
+
+.doctors .doctorsImage img {
+  max-width: 100%;
+}
+
+.doctorLink {
+  text-decoration: none;
+  color: black;
+}
+
+.doctorSheet {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.doctorInfos {
+  margin-top: auto;
+  text-align: center;
+}
+
+.doctorInfos h2 {
+  color: teal;
+}
+
+.doctorEditForm {
+  padding-left: 20px;
+}
+
+.editDoctorButton {
+  cursor: pointer;
+  width: 100%;
+  background-color: teal;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  border: none;
+}
+
+.doctorInfos label {
+  text-align: left;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  width: 100%;
+  height: 40px;
+}
