@@ -1,20 +1,14 @@
-import React from "react";
-import useQuery from "../../hooks/useQuery";
+import React, { useContext } from "react";
+import { paginationContext } from "../";
 import PageLink from "./PageLink";
-import styles from "./pagination.module.css";
+import styles from "../pagination.module.css";
 
 interface IPaginationProps {
   urlResource: string;
-  totalElements: number;
 }
 
-const Pagination: React.SFC<IPaginationProps> = ({
-  urlResource,
-  totalElements,
-}) => {
-  const page: string = useQuery().get("page") || "1";
-  const limit: string = useQuery().get("limit") || "20";
-
+const Pagination: React.SFC<IPaginationProps> = ({ urlResource }) => {
+  const { page, limit, totalElements } = useContext(paginationContext);
   const currentPageNumber = parseInt(page.toString());
   const maxElementDisplayed = parseInt(limit.toString());
   const numberTotalOfPages = Math.ceil(totalElements / maxElementDisplayed);

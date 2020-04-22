@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IDoctor } from "../../types/doctor";
+import { IDoctor } from "../types/doctor";
 import styles from "./doctorsList.module.css";
 
 interface IDoctorItemProps {

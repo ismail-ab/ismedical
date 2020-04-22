@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { IDoctor } from "../../types/doctor";
-import styles from "./doctorsheet.module.css";
+import { IDoctor } from "../types/doctor";
+import styles from "./doctoredit.module.css";
 
-const DoctorSheet: React.FC = () => {
+const DoctorEdit: React.FC = () => {
   const { doctorid: doctorId } = useParams();
   const [isLoading, setIsloading] = useState(true);
   const [doctor, setDoctor] = useState<IDoctor>();
@@ -56,4 +56,4 @@ const DoctorSheet: React.FC = () => {
   );
 };
 
-export default DoctorSheet;
+export default DoctorEdit;

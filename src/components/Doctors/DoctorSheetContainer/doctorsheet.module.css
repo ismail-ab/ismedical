@@ -1,0 +1,37 @@
+.doctorCard {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.doctorCard img {
+  width: 30%;
+  object-fit: contain;
+}
+
+.doctorInfos {
+  margin-top: auto;
+  text-align: center;
+}
+
+.doctorInfos h2 {
+  color: teal;
+}
+
+.bookButton {
+  width: 100%;
+  background-color: teal;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  border: none;
+}
+
+.bookButton[disabled] {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
