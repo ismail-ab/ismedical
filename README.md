@@ -7,7 +7,7 @@ Welcome to my doctors list !
 - `git clone git@github.com:ismail-ab/ismedical.git`
 - `cd ismarket`
 - `npm install`
-- `npm start` or `run debug` :)
+- `npm start` or `run dev` for dev mode
 
 ### Run API
 
