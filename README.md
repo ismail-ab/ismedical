@@ -8,3 +8,8 @@ Welcome to my doctors list !
 - `cd ismarket`
 - `npm install`
 - `npm start` or `run debug` :)
+
+### Run API
+
+- `npm install json-server`
+- `json-server doctors.json --port 8000`
