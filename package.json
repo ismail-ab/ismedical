@@ -17,11 +17,11 @@
   },
   "dependencies": {
     "concurrently": "5.1.0",
-    "json-server": "0.16.1",
+    "json-server": "0.16.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-router-dom": "5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "serve": "11.3.0",
     "typescript": "3.7.2"
   },
